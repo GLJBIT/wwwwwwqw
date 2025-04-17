@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>扫码展示文本</title>
+       <style>
+           body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+           .content { background: #f5f5f5; border-radius: 10px; padding: 20px; margin: 0 auto; max-width: 500px; }
+       </style>
+   </head>
+   <body>
+       <div class="content">
+           <h1></h1>
+           <p id="text-display">用户名：<input>
+</p >   <p id="text-display">密 码：<input>
+</p >
+       <!-- 可选：添加跳转按钮 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .blue-box {
+            background-color: #00008B;  /* 蓝色背景 */
+            color: white;              /* 白色文字 */
+            padding: 10px;             /* 内边距 */
+            border-square: 5px;         /* 四角边框 */
+            width: 200px;               /* 宽度 */
+            margin: 10px auto;          /* 外边距居中 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 阴影效果 */
+        }
+    </style>
+</head>
+<body>
+    <div class="blue-box">
+       查    询
+    </div>
+</body>
+</html>       
+       <script>
+           // 从URL参数中获取文本（更灵活）
+           const params = new URLSearchParams(window.location.search);
+           const text = params.get('text') || ;
+           document.getElementById("text-display").innerText = text;
+       </script>
+   </body>
+   </html>
